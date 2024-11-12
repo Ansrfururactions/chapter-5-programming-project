@@ -1,11 +1,14 @@
-// chapter 5 programming project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int organism, days;
+
+    cout << "enter the amount of organisms" << endl;
+    cin >> organism;
+
+    cout << "enter the amount of days for them to multiply" << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
