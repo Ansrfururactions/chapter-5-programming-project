@@ -3,21 +3,27 @@ using namespace std;
 
 int main()
 {
-    int organism, days;
+    int organism, days, amount;
 
-    cout << "enter the amount of organisms" << endl;
-    cin >> organism;
-
-    cout << "enter the amount of days for them to multiply" << endl;
+    while (organism < 2) 
+    {
+        cout << "enter the amount of organisms" << endl;
+        cin >> organism;
+        if (organism < 2)
+        {
+            cout << "the number of organisms given is below the minimum, please enter at least two" << endl;
+        }
+    }
+    while (days <= 1)
+    {
+        cout << "enter the amount of days for them to multiply" << endl;
+        cin >> days;
+        if (days <= 1)
+        {
+            cout << " any amount less than one is invaild, please tru again" << endl;
+        }
+    }
+        amount = organism * days;
+        cout << "the amount of organisms that would be produced from " << organism << " organisms over the course of " << days << " days would be " << amount << endl;
+    
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
