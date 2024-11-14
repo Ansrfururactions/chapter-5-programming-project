@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int organism, days, amount;
+    int organism = 0, days = 0, amount=0, day = 1;
 
     while (organism < 2) 
     {
@@ -23,7 +23,11 @@ int main()
             cout << " any amount less than one is invaild, please tru again" << endl;
         }
     }
-        amount = organism * days;
-        cout << "the amount of organisms that would be produced from " << organism << " organisms over the course of " << days << " days would be " << amount << endl;
+    while (day <= days)
+    {
+        amount = organism * day;
+        cout << "the amount of organisms that would be produced on day " << day << " would be " << amount << endl;
+        day++;
+    }
     
 }
