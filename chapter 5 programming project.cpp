@@ -2,19 +2,93 @@
 //
 
 #include <iostream>
+#include <fstream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+
+	ofstream outputFile;
+	outputFile.open("People.txt");
+
+		int population;
+	
+	outputFile.close();
+
+	ifstream inputFile;
+
+	string town;
+	string filename;
+
+	cout << "enter the town name: " << endl;
+	cin >> town;
+
+	cout << "Enter the file name: ";
+	cin >> filename;
+
+	
+
+	inputFile.open(filename);
+	if (inputFile.fail())
+	{
+		cout << "could not open file, rerun the program and try again.";
+	}
+	else
+	{
+        
+		int initialpopulation = 0, population = initialpopulation, year = 1900;
+			
+		cout << "please enter initial population" << endl;
+		cin >> initialpopulation;
+		cout << town << " population" << endl;
+	  
+		
+		while (population >= 1000 && year == 1900)
+		{ 
+			cout << "1900";
+			population = population - 1000;
+			year = year + 20;
+			
+	    }
+		while (population >= 1000 )
+		{
+			cout << " *";
+			population = population - 1000;
+			 
+		}
+		cout << endl;
+		population = initialpopulation + 2000;
+		
+			while (population >= 1000 && year == 1920)
+		{
+			cout << "1920";
+			population = population - 1000;
+			year = year + 20;
+
+		}
+		while (population >= 1000)
+		{
+			cout << " *";
+			population = population - 1000;
+		}
+		cout << endl;
+		population = initialpopulation + 2000;
+		while (population >= 1000 && year == 1940)
+		{
+			cout << "1940";
+			population = population - 1000;
+			year = year + 20;
+
+		}
+		while (population >= 1000)
+		{
+			cout << " *";
+			population = population - 1000;
+		}
+		cout << endl;
+	}
+	inputFile.close();
+	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
