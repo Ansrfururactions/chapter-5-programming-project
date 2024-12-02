@@ -13,7 +13,10 @@ int main()
 
     ifstream inputFile;
     inputFile.open("LineUp.txt");
-    
+    if (!)
+    {
+        cout << "Could not open file\n";   return 1;
+    }
     string name1 = "jackie\n";
     string name2 = "sam\n";
     string name3 = "tom\n";
