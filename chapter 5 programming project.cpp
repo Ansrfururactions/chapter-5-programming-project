@@ -13,22 +13,30 @@ int main()
 
     ifstream inputFile;
     inputFile.open("LineUp.txt");
-    if (!)
+    if (inputFile.fail())
     {
-        cout << "Could not open file\n";   return 1;
+        cout << "could not open file, rerun the program and try again.";
+        return 0;
     }
-    string name1 = "jackie\n";
-    string name2 = "sam\n";
-    string name3 = "tom\n";
-    string name4 = "bill\n";
-    string name5 = "mary\n";
-    string name6 = "paul\n";
-    string name7 = "zev\n";
-    string name8 = "berb\n";
+    string name;
+    string first= "z";
+    string last;
+
+    while (inputFile >> name)
+    {
+       if (name < first)
+           
+           first = name;
+      
+       else if (name > last)
+           
+           last = name;
+    }
+
 
     cout << "there is a total of 8 students in the class" << endl;
 
-    cout << "the students to be lined up in alphabetical order are as follows:\n" << name8 << name4 << name1 << name5 << name6 << name2 << name3 << name7;
+    cout << "the student that goes first is " << first << " and the student who goes last is " << last << endl;
     
     inputFile.close();
 }
