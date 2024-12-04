@@ -7,17 +7,8 @@ using namespace std;
 
 int main()
 {
-
-
-	ofstream outputFile;
-	outputFile.open("People.txt");
-
-		int population;
-	
-	outputFile.close();
-
 	ifstream inputFile;
-
+	int population;
 	string town;
 	string filename;
 
@@ -36,7 +27,8 @@ int main()
 	}
 	else
 	{
-        while (inputfile >>)
+        while (inputfile >> population)
+			if
 		
 	}
 	inputFile.close();
