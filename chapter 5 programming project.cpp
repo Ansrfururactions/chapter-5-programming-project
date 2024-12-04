@@ -36,57 +36,8 @@ int main()
 	}
 	else
 	{
-        
-		int initialpopulation = 0, population = initialpopulation, year = 1900;
-			
-		cout << "please enter initial population" << endl;
-		cin >> initialpopulation;
-		cout << town << " population" << endl;
-	  
+        while (inputfile >>)
 		
-		while (population >= 1000 && year == 1900)
-		{ 
-			cout << "1900";
-			population = population - 1000;
-			year = year + 20;
-			
-	    }
-		while (population >= 1000 )
-		{
-			cout << " *";
-			population = population - 1000;
-			 
-		}
-		cout << endl;
-		population = initialpopulation + 2000;
-		
-			while (population >= 1000 && year == 1920)
-		{
-			cout << "1920";
-			population = population - 1000;
-			year = year + 20;
-
-		}
-		while (population >= 1000)
-		{
-			cout << " *";
-			population = population - 1000;
-		}
-		cout << endl;
-		population = initialpopulation + 2000;
-		while (population >= 1000 && year == 1940)
-		{
-			cout << "1940";
-			population = population - 1000;
-			year = year + 20;
-
-		}
-		while (population >= 1000)
-		{
-			cout << " *";
-			population = population - 1000;
-		}
-		cout << endl;
 	}
 	inputFile.close();
 	return 0;
