@@ -28,8 +28,11 @@ int main()
 	}
 	else
 	{
+		cout << "town population growth" << endl;
+		cout << "(each * represents 1000 people)" << endl;
 		while (inputFile >> population)
 		{
+		
 			cout << year;
 				int thousandpeople = population / 1000;
 
