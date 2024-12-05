@@ -8,7 +8,6 @@ using namespace std;
 int main()
 {
 	ifstream inputFile;
-	int population;
 	string town;
 	string filename;
 
@@ -27,9 +26,23 @@ int main()
 	}
 	else
 	{
-        while (inputfile >> population)
-			if
-		
+        while (inputFile >> population)
+			if (population >= 1000)
+			{
+				int population;
+				int year;
+				int thousandpeople = population / 1000;
+			    int reference=0;
+
+				for (reference = 0; thousandpeople = reference; reference++)
+				{
+					cout << "*";
+				}
+			}
+			else
+			{
+				cout << endl;
+			}
 	}
 	inputFile.close();
 	return 0;
